@@ -23,7 +23,7 @@ class Vector:
 
 
     def vectors_len(self):
-        return self.vector
+        return len(self.vector)
     def rationing_vector(self):
         return self.x/self.vectors_len(),self.y/self.vectors_len()
 
