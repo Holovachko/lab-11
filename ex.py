@@ -5,7 +5,6 @@ class Vector:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.vector = [el for el in range(int(math.sqrt(self.x**2 + self.y**2)+1))]
 
     @property
     def x(self):
@@ -23,7 +22,7 @@ class Vector:
 
 
     def vectors_len(self):
-        return len(self.vector)
+        return int(math.sqrt(self.x**2 + self.y**2)+1)
     def rationing_vector(self):
         return self.x/self.vectors_len(),self.y/self.vectors_len()
 
